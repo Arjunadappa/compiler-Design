@@ -190,6 +190,7 @@ func (c *Compiler) Compile(node ast.Node) error {
 }
 
 func (c *Compiler) Bytecode() *Bytecode {
+	//fmt.Println(c.symbolTable)
 	return &Bytecode{
 		Instructions: c.instructions,
 		Constants:    c.constants,
