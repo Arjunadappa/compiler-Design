@@ -1,0 +1,30 @@
+if-else statement
+stmt -> matched | unmatched
+matched -> if expr then matched else matched | other-stmt
+unmatched -> if expr then stmt
+unmatched -> if expr then matched else unmatched
+
+CFG for arithmatic expressions loop
+E → int
+E → E Op E
+E → (E)
+Op → +
+Op → -
+Op → *
+Op → /
+
+CFG for while loop
+S->w(C)bAe 
+O->p 
+C->iOn 
+C->iOi 
+A->L;A 
+A->f 
+L->i=E 
+E->T*F
+T->i
+F->n
+
+CFG for function declaration
+S-> name (A) { stmts}
+A-> argname
